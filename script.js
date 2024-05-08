@@ -20,7 +20,7 @@ function jsonreq() {
 
                                                let aux = objectData;
 
-                                                document.getElementById("respJSON").value = JSON.stringify(aux, undefined, 4);
+                                                document.getElementById("respJSON").innerHTML = JSON.stringify(aux, undefined, 4);
 
                                 }catch(e){
 
@@ -42,7 +42,7 @@ function verRespuesta(objJSON)
 
       console.log("AUTO REFERENCIA PASO POR ACÁ")
 
-      document.getElementById("respuesta").value = JSON.stringify(aux, undefined, 4);
+      document.getElementById("respuesta").innerHTML = JSON.stringify(aux, undefined, 4);
 
 }
 
