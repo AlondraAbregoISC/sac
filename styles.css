@@ -1,0 +1,12 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.respJSON {
+	order: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
