@@ -5,12 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título de la página sac</title>
     <!-- Enlaces a archivos CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <style>
+  .container {
+	display: flex;
+	flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: 700px;
+    background: #FFFFFF;
+    background-color: powderblue;
+    margin: 50px;
+}
+
+#botonStart, #botonStart10 {
+	align-self: center;
+}
+
+#botonStart10 {
+    width: 100px; 
+}
+
+#respJSON {
+	order: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+    margin-top: 30px;
+} </style>
 </head>
 <body>
 
     <div class="container">
-        <a href="#" id="botonStart" onclick="jsonreq()">Obtener configuracion dispositivo</a>
+        <a href="#" id="botonStart" onclick="jsonreq()">Device Settings</a><br>
 
         <button href="#" id="botonStart10" onclick="jsonreq('verRespuesta')" >AUTH CLIENT</button>
     
