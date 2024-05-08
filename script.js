@@ -29,3 +29,20 @@ function jsonreq() {
                                 }
 
                }
+
+
+
+function verRespuesta(objJSON)
+
+{
+
+      let aux = objJSON;
+
+      console.log(aux);
+
+      console.log("AUTO REFERENCIA PASO POR ACÁ")
+
+      document.getElementById("respuesta").value = JSON.stringify(aux, undefined, 4);
+
+}
+
