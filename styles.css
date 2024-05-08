@@ -1,12 +1,25 @@
 .container {
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	align-content: center;
+  align-content: center;
+  width: 100%;
+  height: 700px;
+  background: #FFFFFF;
+  background-color: powderblue;
+   margin: 50px;
 }
 
-.respJSON {
+#botonStart, #botonStart10 {
+	align-self: center;
+}
+
+#botonStart10 {
+  width: 100px; 
+}
+
+#respJSON {
 	order: 0;
 	flex-grow: 1;
 	flex-shrink: 1;
+  margin-top: 30px;
 }
