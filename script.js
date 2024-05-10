@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Llama a jsonreq() una vez que el DOM esté listo
+    jsonreq();
+});
+
 function jsonreq() {
 
                                console.log("entra a la funcion")
@@ -46,8 +51,3 @@ function verRespuesta(objJSON)
       document.getElementById("respuesta").innerHTML = JSON.stringify(aux, undefined, 4);
 
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Llama a jsonreq() una vez que el DOM esté listo
-    jsonreq();
-});
