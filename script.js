@@ -46,3 +46,10 @@ function verRespuesta(objJSON)
 
 }
 
+function recibirDatosAndroid(data) {
+    // Manejar los datos recibidos de Android
+    console.log("Datos recibidos de Android:", data);
+    // Puedes mostrar los datos en la página web como desees
+    document.getElementById("datos").innerText = "Datos recibidos de Android: " + data;
+}
+
