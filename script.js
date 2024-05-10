@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtener una referencia al botón
+    var botonStart10 = document.getElementById("botonStart10");
+    
+    // Agregar un escuchador de eventos al evento de carga del WebView
+    document.addEventListener("load", function() {
+        // Llama a jsonreq() una vez que el WebView haya terminado de cargar
+        botonStart10.addEventListener("click", function() {
+            jsonreq();
+        });
+    });
+});
+
 function jsonreq() {
 
                                console.log("entra a la funcion")
