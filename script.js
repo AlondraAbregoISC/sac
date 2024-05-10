@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Llama a jsonreq() una vez que el DOM esté listo
-    jsonreq();
-});
-
 function jsonreq() {
 
                                console.log("entra a la funcion")
