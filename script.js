@@ -6,7 +6,8 @@ function jsonreq() {
 
                                                console.log("entra al try")
 
-                                               let data = window.Android.jsonSettings();
+                                               let data = window.mobile.jsonSettings();
+                                              
 
                                                 console.log(data)
 
@@ -45,11 +46,3 @@ function verRespuesta(objJSON)
       document.getElementById("respuesta").innerHTML = JSON.stringify(aux, undefined, 4);
 
 }
-
-function recibirDatosAndroid(data) {
-    // Manejar los datos recibidos de Android
-    console.log("Datos recibidos de Android:", data);
-    // Puedes mostrar los datos en la página web como desees
-    document.getElementById("datos").innerText = "Datos recibidos de Android: " + data;
-}
-
