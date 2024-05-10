@@ -5,43 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título de la página sac</title>
     <!-- Enlaces a archivos CSS -->
-    <style>
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            width: 100%;
-            height: 700px;
-            background: #FFFFFF;
-        }
+  <style>
+  .container {
+	display: flex;
+	flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: 700px;
+    background: #FFFFFF;
+}
 
-        #botonStart,
-        #botonStart10 {
-            align-self: center;
-            margin-top: 30px;
-        }
+#botonStart, #botonStart10 {
+	align-self: center;
+    margin-top: 30px;
+}
 
-        #botonStart10 {
-            width: 100px;
-        }
+#botonStart10 {
+    width: 100px; 
+}
 
-        #respJSON {
-            order: 0;
-            flex-grow: 1;
-            flex-shrink: 1;
-            margin-top: 30px;
-        }
-    </style>
+#respJSON {
+	order: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
+    margin-top: 30px;
+} </style>
 </head>
 <body>
 
-<div class="container">
-    <button href="#" id="botonStart" onclick="jsonreq()">Device Settings</button>
-    <button href="#" id="botonStart10">AUTH CLIENT</button>
-    <p id="respJSON"></p>
-</div>
+    <div class="container">
+        <button href="#" id="botonStart" onclick="jsonreq()">Device Settings</button>
 
-<!-- Scripts de JavaScript -->
-<script src="script.js"></script>
+        <button href="#" id="botonStart10" onclick="jsonreq('verRespuesta')" >AUTH CLIENT</button>
+    
+        <p id="respJSON"></p>
+    </div>
+    
+    <!-- Scripts de JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
