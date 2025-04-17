@@ -46,3 +46,14 @@ function verRespuesta(objJSON)
       document.getElementById("respuesta").innerHTML = JSON.stringify(aux, undefined, 4);
 
 }
+
+
+function expiredSession()
+
+{
+
+      window.mobile.invalidSession()
+      console.log("Invalid session");
+
+}
+
